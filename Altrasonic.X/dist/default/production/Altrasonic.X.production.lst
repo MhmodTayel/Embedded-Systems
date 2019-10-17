@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Thu Oct 17 16:25:31 2019
+                                                                                               Thu Oct 17 16:38:35 2019
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16F877A
@@ -533,11 +533,11 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    519  049D  018F               	clrf	15	;volatile
    520  049E                     l1101:	
    521                           
-   522                           ;main.c: 59:     RC2=1;
+   522                           ;main.c: 60:     RC2=1;
    523  049E  1507               	bsf	7,2	;volatile
    524  049F                     l1103:	
    525                           
-   526                           ;main.c: 60:     _delay((unsigned long)((10)*(4000000/4000000.0)));
+   526                           ;main.c: 61:     _delay((unsigned long)((10)*(4000000/4000000.0)));
    527  049F  3002               	movlw	2
    528  04A0  1283               	bcf	3,5	;RP0=0, select bank0
    529  04A1  1303               	bcf	3,6	;RP1=0, select bank0
@@ -548,12 +548,12 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    534  04A5  0000               	nop
    535  04A6                     l1105:	
    536                           
-   537                           ;main.c: 61:     RC2=0;
+   537                           ;main.c: 62:     RC2=0;
    538  04A6  1283               	bcf	3,5	;RP0=0, select bank0
    539  04A7  1303               	bcf	3,6	;RP1=0, select bank0
    540  04A8  1107               	bcf	7,2	;volatile
    541  04A9                     l45:	
-   542                           ;main.c: 62:     while(!RC3);
+   542                           ;main.c: 64:     while(!RC3);
    543                           
    544  04A9  1D87               	btfss	7,3	;volatile
    545  04AA  2CAC               	goto	u1031
@@ -563,10 +563,10 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    549  04AD                     u1030:	
    550  04AD                     l47:	
    551                           
-   552                           ;main.c: 63:     TMR1ON=1;
+   552                           ;main.c: 65:     TMR1ON=1;
    553  04AD  1410               	bsf	16,0	;volatile
    554  04AE                     l48:	
-   555                           ;main.c: 64:     while(RC3);
+   555                           ;main.c: 66:     while(RC3);
    556                           
    557  04AE  1987               	btfsc	7,3	;volatile
    558  04AF  2CB1               	goto	u1041
@@ -576,11 +576,11 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    562  04B2                     u1040:	
    563  04B2                     l50:	
    564                           
-   565                           ;main.c: 65:     TMR1ON=0;
+   565                           ;main.c: 67:     TMR1ON=0;
    566  04B2  1010               	bcf	16,0	;volatile
    567  04B3                     l1107:	
    568                           
-   569                           ;main.c: 66:     distance = TMR1/58.82;
+   569                           ;main.c: 68:     distance = TMR1/58.82;
    570  04B3  3042               	movlw	66
    571  04B4  00A3               	movwf	___fldiv@a+3
    572  04B5  306B               	movlw	107
@@ -620,7 +620,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
    606  04DF  00BF               	movwf	calc_dist@distance
    607  04E0                     l1109:	
    608                           
-   609                           ;main.c: 67:     return distance;
+   609                           ;main.c: 69:     return distance;
    610  04E0  0842               	movf	calc_dist@distance+3,w
    611  04E1  00BD               	movwf	?_calc_dist+3
    612  04E2  0841               	movf	calc_dist@distance+2,w
@@ -1876,7 +1876,7 @@ DATA                 0      0       0      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Thu Oct 17 16:25:31 2019
+Symbol Table                                                                                   Thu Oct 17 16:38:35 2019
 
            ___fldiv@aexp 0039             ___fldiv@bexp 0038             ___fldiv@sign 0031  
             __CFG_CP$OFF 0000                       l50 04B2                       l51 04E8  

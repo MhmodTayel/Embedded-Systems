@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\20102\AppData\Local\Temp\s8jo.o
+$C:\Users\20102\AppData\Local\Temp\s7c0.o
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production\Altrasonic.X.production.o
@@ -68,11 +68,11 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Altrasonic.X.production.o
-7FC cinit CODE >378:C:\Users\20102\AppData\Local\Temp\s8jo.s
-7FC cinit CODE >381:C:\Users\20102\AppData\Local\Temp\s8jo.s
-7FC cinit CODE >387:C:\Users\20102\AppData\Local\Temp\s8jo.s
-7FC cinit CODE >389:C:\Users\20102\AppData\Local\Temp\s8jo.s
-7FD cinit CODE >390:C:\Users\20102\AppData\Local\Temp\s8jo.s
+7FC cinit CODE >378:C:\Users\20102\AppData\Local\Temp\s7c0.s
+7FC cinit CODE >381:C:\Users\20102\AppData\Local\Temp\s7c0.s
+7FC cinit CODE >387:C:\Users\20102\AppData\Local\Temp\s7c0.s
+7FC cinit CODE >389:C:\Users\20102\AppData\Local\Temp\s7c0.s
+7FD cinit CODE >390:C:\Users\20102\AppData\Local\Temp\s7c0.s
 4E9 text4 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
 4E9 text4 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
 4F6 text4 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
@@ -210,16 +210,16 @@ $dist/default/production\Altrasonic.X.production.o
 49A text1 CODE >56:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
 49A text1 CODE >57:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
 49A text1 CODE >58:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-49E text1 CODE >59:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-49F text1 CODE >60:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4A6 text1 CODE >61:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4A9 text1 CODE >62:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4AD text1 CODE >63:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4AE text1 CODE >64:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4B2 text1 CODE >65:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4B3 text1 CODE >66:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4E0 text1 CODE >67:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
-4E8 text1 CODE >68:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+49E text1 CODE >60:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+49F text1 CODE >61:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4A6 text1 CODE >62:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4A9 text1 CODE >64:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4AD text1 CODE >65:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4AE text1 CODE >66:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4B2 text1 CODE >67:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4B3 text1 CODE >68:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4E0 text1 CODE >69:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
+4E8 text1 CODE >70:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
 44C maintext CODE >13:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
 44C maintext CODE >14:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
 44C maintext CODE >15:C:\Users\20102\Desktop\PIC projects\Altrasonic.X\main.c
@@ -261,20 +261,20 @@ __Hspace_3 0 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _TMR1 E 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\20102\AppData\Local\Temp\s8jo.o
+___sp 0 0 STACK 2 stack C:\Users\20102\AppData\Local\Temp\s7c0.o
 _main 898 0 CODE 0 maintext dist/default/production\Altrasonic.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
-start 0 0 CODE 0 init C:\Users\20102\AppData\Local\Temp\s8jo.o
+start 0 0 CODE 0 init C:\Users\20102\AppData\Local\Temp\s7c0.o
 __size_of___fldiv 0 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 __size_of___fltol 0 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s8jo.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s8jo.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s8jo.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s8jo.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s8jo.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s8jo.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s7c0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s7c0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s7c0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s7c0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s7c0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\20102\AppData\Local\Temp\s7c0.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -286,8 +286,8 @@ ___fldiv@sign 31 0 BANK0 1 cstackBANK0 dist/default/production\Altrasonic.X.prod
 calc_dist@distance 3F 0 BANK0 1 cstackBANK0 dist/default/production\Altrasonic.X.production.o
 __end_of___fldiv FF8 0 CODE 0 text3 dist/default/production\Altrasonic.X.production.o
 __end_of___fltol ACA 0 CODE 0 text4 dist/default/production\Altrasonic.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\20102\AppData\Local\Temp\s8jo.o
-___stacklo 0 0 ABS 0 - C:\Users\20102\AppData\Local\Temp\s8jo.o
+___stackhi 0 0 ABS 0 - C:\Users\20102\AppData\Local\Temp\s7c0.o
+___stacklo 0 0 ABS 0 - C:\Users\20102\AppData\Local\Temp\s7c0.o
 __CFG_FOSC$EXTRC 0 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 ___fldiv@a 20 0 BANK0 1 cstackBANK0 dist/default/production\Altrasonic.X.production.o
 ___fldiv@b 24 0 BANK0 1 cstackBANK0 dist/default/production\Altrasonic.X.production.o
@@ -297,7 +297,7 @@ _TMR1CS 81 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 _TMR1ON 80 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 _TRISC2 43A 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 _TRISC3 43B 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\20102\AppData\Local\Temp\s8jo.o
+___int_sp 0 0 STACK 2 stack C:\Users\20102\AppData\Local\Temp\s7c0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -347,7 +347,7 @@ __S3 0 0 ABS 0 - -
 ___xxtofl ACA 0 CODE 0 text2 dist/default/production\Altrasonic.X.production.o
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Altrasonic.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\20102\AppData\Local\Temp\s8jo.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\20102\AppData\Local\Temp\s7c0.o
 __end_of___xxtofl C3E 0 CODE 0 text2 dist/default/production\Altrasonic.X.production.o
 ___fldiv C3E 0 CODE 0 text3 dist/default/production\Altrasonic.X.production.o
 ___fltol 9D2 0 CODE 0 text4 dist/default/production\Altrasonic.X.production.o

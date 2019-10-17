@@ -1775,9 +1775,11 @@ void main(void) {
 float calc_dist(void) {
     float distance = 0;
     TMR1=0;
+
     RC2=1;
     _delay((unsigned long)((10)*(4000000/4000000.0)));
     RC2=0;
+
     while(!RC3);
     TMR1ON=1;
     while(RC3);

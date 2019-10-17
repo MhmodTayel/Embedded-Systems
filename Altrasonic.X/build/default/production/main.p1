@@ -362,43 +362,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "58
 [; ;main.c: 58:     TMR1=0;
 [e = _TMR1 -> -> 0 `i `us ]
-"59
-[; ;main.c: 59:     RC2=1;
-[e = _RC2 -> -> 1 `i `b ]
 "60
-[; ;main.c: 60:     _delay((unsigned long)((10)*(4000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+[; ;main.c: 60:     RC2=1;
+[e = _RC2 -> -> 1 `i `b ]
 "61
-[; ;main.c: 61:     RC2=0;
-[e = _RC2 -> -> 0 `i `b ]
+[; ;main.c: 61:     _delay((unsigned long)((10)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "62
-[; ;main.c: 62:     while(!RC3);
+[; ;main.c: 62:     RC2=0;
+[e = _RC2 -> -> 0 `i `b ]
+"64
+[; ;main.c: 64:     while(!RC3);
 [e $U 106  ]
 [e :U 107 ]
 [e :U 106 ]
 [e $ ! _RC3 107  ]
 [e :U 108 ]
-"63
-[; ;main.c: 63:     TMR1ON=1;
+"65
+[; ;main.c: 65:     TMR1ON=1;
 [e = _TMR1ON -> -> 1 `i `b ]
-"64
-[; ;main.c: 64:     while(RC3);
+"66
+[; ;main.c: 66:     while(RC3);
 [e $U 109  ]
 [e :U 110 ]
 [e :U 109 ]
 [e $ _RC3 110  ]
 [e :U 111 ]
-"65
-[; ;main.c: 65:     TMR1ON=0;
-[e = _TMR1ON -> -> 0 `i `b ]
-"66
-[; ;main.c: 66:     distance = TMR1/58.82;
-[e = _distance -> / -> -> _TMR1 `ui `d .58.82 `f ]
 "67
-[; ;main.c: 67:     return distance;
+[; ;main.c: 67:     TMR1ON=0;
+[e = _TMR1ON -> -> 0 `i `b ]
+"68
+[; ;main.c: 68:     distance = TMR1/58.82;
+[e = _distance -> / -> -> _TMR1 `ui `d .58.82 `f ]
+"69
+[; ;main.c: 69:     return distance;
 [e ) _distance ]
 [e $UE 105  ]
-"68
-[; ;main.c: 68: }
+"70
+[; ;main.c: 70: }
 [e :UE 105 ]
 }
