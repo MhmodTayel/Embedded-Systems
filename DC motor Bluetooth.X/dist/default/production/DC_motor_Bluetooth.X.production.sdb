@@ -1,0 +1,96 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"24 C:\Users\20102\Desktop\PIC projects\DC motor Bluetooth.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"80
+[v _PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+"91
+[v _UART_RX_Init UART_RX_Init `(v  1 e 1 0 ]
+"108
+[v _ISR ISR `II(v  1 e 1 0 ]
+"892 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f877a.h
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2446
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"2449
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"2452
+[v _CCP1X CCP1X `VEb  1 e 0 @189 ]
+"2455
+[v _CCP1Y CCP1Y `VEb  1 e 0 @188 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2740
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2872
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"2875
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2965
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"2983
+[v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
+"2986
+[v _TRISD1 TRISD1 `VEb  1 e 0 @1089 ]
+"13 C:\Users\20102\Desktop\PIC projects\DC motor Bluetooth.X\main.c
+[v _UART_Buffer UART_Buffer `uc  1 e 1 0 ]
+"24
+[v _main main `(v  1 e 1 0 ]
+{
+"77
+} 0
+"91
+[v _UART_RX_Init UART_RX_Init `(v  1 e 1 0 ]
+{
+"106
+} 0
+"80
+[v _PWM1_Set_Duty PWM1_Set_Duty `(v  1 e 1 0 ]
+{
+[v PWM1_Set_Duty@DC DC `ui  1 p 2 3 ]
+"89
+} 0
+"108
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"113
+} 0
