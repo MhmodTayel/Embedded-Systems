@@ -12,11 +12,12 @@
 void UART_RX_Init(void);
 uint8_t UART_Buffer =0;
 //--[ Pin Definitions ]--
-#define Rev 49   // Reverse Direction 
-#define LV0 50   // 0% Speed 
-#define LV1 51    // 50% Speed 
-#define LV2 52  // 75% Speed 
-#define LV3 53   // 100% Speed 
+#define OFF 48   // OFF 
+#define ON 49   // ON with 0% Speed 
+#define LV1 50   // 50% Speed 
+#define LV2 51    // 75% Speed 
+#define LV3 52  // 100% Speed 
+#define Rev 53   // Reverse Direction 
 //===============================
 //--[ Function Declarations ]--
 void PWM1_Set_Duty(uint16_t);
@@ -32,7 +33,7 @@ void main(void)
   // Initially (0, 1) Say it's ClockWise rotation!
   // For Reversing The Direction Write (1, 0)
   RD0 = 0;
-  RD1 = 1;
+  RD1 = 0;
  
   //--[ Configure The CCP Module For PWM Mode ]--
   CCP1M3 = 1;
@@ -49,17 +50,18 @@ void main(void)
   // The Main Loop (Routine)
   while(1)
   {
-    if(UART_Buffer == Rev) // Reverse The Direction
+      if(UART_Buffer == OFF)
     {
-      RD0 = ~RD0;
-      RD1 = ~RD1;
-      UART_Buffer = LV1 ;
+      RD0 = 0;
+      RD1 =0 ;
     }
-    if(UART_Buffer == LV0) // 0% DC
+      if(UART_Buffer == ON)
     {
       PWM1_Set_Duty(0);
+      RD0 = 0;
+      RD1 = 1;
     }
-    if(UART_Buffer == LV1) // 50% DC
+      if(UART_Buffer == LV1) // 50% DC
     {
       PWM1_Set_Duty(250);
     }
@@ -70,6 +72,12 @@ void main(void)
     if (UART_Buffer == LV3) // 100% DC
     {
       PWM1_Set_Duty(500);
+    }
+    if(UART_Buffer == Rev) // Reverse The Direction
+    {
+      RD0 = ~RD0;
+      RD1 = ~RD1;
+      UART_Buffer = LV1 ;
     }
     __delay_ms(10);  // Wait To Reduce The Simulation Overloading
   }
