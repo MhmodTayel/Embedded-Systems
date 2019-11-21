@@ -1,7 +1,7 @@
 /*
  * File:   main.c
 
- * LAB Name: LM35 Temp. Sensor + LCD
+ * LAB Name: LDR. Sensor + LCD
  * Author: Mhmod Tayel
 
  */
@@ -25,9 +25,9 @@
 //=================================
 //-----[ Globals ]-----
 uint16_t AN0RES=0;
-float Temperature, Voltage;
+float light, Voltage;
 char* line1 = " Light Intensity Is";
-char* TempSTR[16];
+char* lightSTR[16];
 //=================================
 //-----[ Functions Prototypes ]----
 void ADC_Init();
@@ -52,23 +52,24 @@ void main(void) {
     {
         // Read The ADC
         AN0RES = ADC_Read(0); // Read Analog Channel 0
-        // Calculate The Temperature
+        // Calculate The 
+        erature
         Voltage = AN0RES * 0.0048828;
-        Temperature = Voltage / 0.1;
-         if(Temperature <=25 ){
+        light = Voltage / 0.1;
+         if(light <=25 ){
               PORTBbits.RB7=1;  
         }else{
              PORTBbits.RB7=0; 
         }
-        // Convert The Temperature From Float To String
-        sprintf(TempSTR, "     %.3f", Temperature);
-        // Print Out The Temperature
+        // Convert The light From Float To String
+        sprintf(lightSTR, "     %.3f", light);
+        // Print Out The light
         LCD_Set_Cursor(1,1);
         LCD_Write_String(line1);
         LCD_Set_Cursor(2,1);
-        LCD_Write_String(TempSTR);
+        LCD_Write_String(lightSTR);
         __delay_ms(10);
-        if(Temperature >=30 ){
+        if(light >=30 ){
               PORTBbits.RB7=1;  
         }
     }
